@@ -1,6 +1,7 @@
 mod rod_cutting;
+mod lc_2696;
 
 fn main() {
-    let price = [1, 5, 8, 9, 10, 17, 17, 20];
-    println!("{}", rod_cutting::rod_cutting(price.to_vec(), 8));
+    let s:String = String::from("ACBBD");
+    println!("{}", lc_2696::min_length(s));
 }
