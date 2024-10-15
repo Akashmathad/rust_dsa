@@ -1,5 +1,4 @@
-
-mod lc_1004;
+mod lc_904;
 fn main() {
  
 }
