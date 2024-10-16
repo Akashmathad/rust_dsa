@@ -2,7 +2,7 @@ pub fn max_score(card_points: Vec<i32>, k: i32) -> i32 {
   let mut sum = 0;
   let mut ans = std::i32::MAX;
 
-  for i in 0..k{
+  for i in 0..k {
     sum += card_points[i as usize];
   }
   ans = sum;
@@ -16,7 +16,7 @@ pub fn max_score(card_points: Vec<i32>, k: i32) -> i32 {
     ans = std::cmp::max(ans, sum);
     l -= 1;
     r -= 1;
-    nk -=1;
+    nk -= 1;
   }
   ans
 }

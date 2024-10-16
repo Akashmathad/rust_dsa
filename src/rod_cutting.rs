@@ -1,4 +1,4 @@
-pub fn rod_cutting(price: Vec<i32>, n: i32) -> i32{
+pub fn rod_cutting(price: Vec<i32>, n: i32) -> i32 {
   let mut dp = vec![0; (n + 1) as usize];
   let l = dp.len();
   dp[1] = price[0];

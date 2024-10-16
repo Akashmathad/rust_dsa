@@ -1,4 +1,3 @@
-mod lc_904;
-fn main() {
- 
-}
+mod lc_1343;
+mod lc_1456;
+fn main() {}

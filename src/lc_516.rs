@@ -12,12 +12,12 @@ pub fn longest_palindrome_subseq(s: String) -> i32 {
 
       if g == 0 {
         dp[i][j] = 1;
-      }else if g == 1 && string_arr[i] == string_arr[j] {
+      } else if g == 1 && string_arr[i] == string_arr[j] {
         dp[i][j] = 2;
-      }else {
+      } else {
         if string_arr[i] == string_arr[j] {
           dp[i][j] = 2 + dp[i + 1][j - 1];
-        }else {
+        } else {
           dp[i][j] = std::cmp::max(dp[i + 1][j], dp[i][j - 1]);
         }
       }
